@@ -1,0 +1,217 @@
+﻿body {
+    width: 100em;
+    margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+
+body > div {
+width: 1200px;
+height:1600px;
+border-radius: 5px;
+border: 5px solid black;
+margin-left:auto;
+margin-right:auto;
+top:0;
+left:0;
+}
+
+body > div > img{
+position: fixed;
+z-index:-2;
+width:1200px;
+]
+
+/*create the containing block for the h1 and nav by making header relative to its self.
+make the image go behind the absolute div by z-indexing it first in the stack*/
+body > div > header {
+    font-family: Sans-serif;
+    font-size: 1em;
+    width: 1200px;
+    margin-left:auto;
+	margin-right:auto;
+    padding: 0%;
+	position:relative;
+	z-index:1;
+    }
+
+body > div > header img {
+width: 1200px;
+margin-left:auto;
+margin-right:auto;
+border-radius: 5px;
+position:fixed;
+z-index:-99;
+}
+
+body > div > header span {
+margin:-24px;
+	color:red;
+	Font-style:oblique;
+	Font-variant: small-caps;
+	Font-weight: bolder, light;
+	Font-size:1em;
+	line-height:1em;
+	Font-family: "Times New Roman", Times, serif;
+}
+
+body > div> header h1 {
+position: absolute;
+top:0;
+left:0;
+margin-top: 0em;
+margin-left: 0em;
+z-index:2;
+font-size:3em;
+color:black;
+background: -webkit-linear-gradient(#aaa, #fff); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#aaa, #fff); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#aaa, #fff); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#fff, #aaa); /* Standard syntax */
+	}
+
+nav { 
+margin-bottom: 0;
+margin-left: 0;
+margin-right:0;
+
+background:#aaa; 
+
+
+border: 1.5px solid black;
+
+padding:0; 
+
+width: 1200px;
+height:3em;
+
+bottom:0;
+left:0;
+
+position: absolute;
+display:inline-block;
+z-index:2;
+}
+
+body > div >  main {
+    font-family: Sans-serif;
+    font-size: 1em;
+    width: 1200px;
+    margin-left:auto;
+	margin-right:auto;
+    padding: 0%;
+    }
+
+body  > div > main > section{
+width: inherit;
+display:block;
+}
+
+body > div> main > section > article{
+border: 2px solid black;
+display:inline-block;
+position:left;
+word-wrap:break-word;
+float:left;
+width: 1200px;
+}
+
+body > div> main > section > article.secart{
+border: 2px solid black;
+display:inline-block;
+position:static;
+word-wrap:break-word;
+float:left;
+width: 600px;
+}
+
+body  > div /*<--this is the container*/> main  > section  > aside.secaside{
+border-radius: 5px;
+border: 2px solid black;
+display:inline-block;
+position:absolute;
+left:20px;
+top:20px;
+word-wrap:break-word;
+float:right;
+width:600pxpx;
+height: 100%;
+z-index:-100;
+}
+
+/*
+body  > div > main  > section  > aside.asidetwo{
+border-radius: 5px;
+border: 2px solid black;
+display:inline-block;
+position:fixed;
+right:20px;
+top:20px;
+word-wrap:break-word;
+float:right;
+width:400px;
+height:100%;
+z-index:-100;
+}
+*/
+
+body  > div > main  > section  > aside > iframe {
+width: 390px;
+height:80%;
+margin-top;10%;
+}
+/*
+section .hasaside  {
+display:inline-block; 
+padding-left:auto;
+padding-right:auto; 
+width:17%;
+height:1em;
+top:0;
+left:0;
+font-size:1em;
+border-radius: 5px;
+border: 2px solid #ccc;
+}
+	*/
+/*link underline*/
+a:link {
+	text-decoration: none !important;
+	}
+
+a:visited {
+    text-decoration: none !important;
+	}
+
+a:hover {
+    text-decoration: underline !important;
+	color:black;
+	}
+
+a:active {
+    text-decoration: underline !important;
+	}
+	
+	
+/*link colouring*/
+	
+	
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}

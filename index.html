@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!--
+				Author: Matthew K. Greenlaw
+				Date: 09OCT14
+				Week Submitted: Week 2
+		-->
+		<!--github test-->
+		
+		<link type="text/css" rel="stylesheet" href="navstyle.css" />		
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+
+		
+		<title> 
+			3D Grimoire 
+		</title>
+		<link rel="shortcut icon" href="/3dgrimoireicon.ico">
+	</head>
+	<body>
+		<div> <!--Page Container -->	
+			<img src="media/background.jpg"></img>
+			<header>	
+				<h1> 
+					3D <span> Printing </span> Grimoire <!--Use the span container to format "Printing" later on once CSS is in use. -->
+				</h1>
+				<img src="media/banner.jpg" width="90%" title="3D printing leftovers"/>
+				<nav role="navigation" aria-label="Main menu"> <!--Move this to the top once CSS is applied.-->				
+					<ul role="menubar">				
+						<li role="menuitem" tabindex="0" aria-haspopup="true">
+							<a href="index.html" title="Go to the main page"> 
+								<p>
+									Home
+								</p> 
+							</a>				
+						</li>
+						<li role="menuitem" tabindex="0" aria-haspopup="true">
+							<p> 
+								Directory 
+							</p>						
+							<ul role="menu" aria-haspopup="true">						
+								<li role="menuitem" tabindex="-1">
+									 <a href="underconstruction.html" title="Compare 3D Printers"> 3D Printers </a>						
+								</li>						
+								<li role="menuitem" tabindex="-1">								
+									<a href="underconstruction.html" title="Compare 3D Printer Components"> 3D Printer Parts </a>
+								</li>							
+								<li>								
+									<a href="underconstruction.html" title="Compare Extrudable Materials"> 
+										3D Printing Materials 
+									</a>						
+								</li>
+								<li role="menuitem" tabindex="-1">								
+									<a href="underconstruction.html" title="Compare 3D Printer Host software"> 
+										3D Printer Host Software 
+									</a>							
+								</li>
+								<li role="menuitem" tabindex="-1">								
+									<a href="underconstruction.html" title="Compare 3D Editing Software"> 
+										3D Editing Software
+									</a>							
+								</li>						
+							</ul>
+						</li>								
+						
+						<li role="menuitem" tabindex="-1">						
+							<p> 
+								External Links 
+							</p>
+							<ul role="menu>							
+								<li role="menuitem" tabindex="-1">								
+									<a href="http://www.makerbot.com/" title="Makerbot Home Page"> 
+										Makerbot 
+									</a>							
+								</li>
+								<li role="menuitem" tabindex="-1">								
+									<a href="http://www.printrbot.com/" title="Printrbot Home Page"> 
+										Printrbot 
+									</a>							
+								</li>
+								<li role="menuitem" tabindex="-1">								
+									<a href="http://radioshack.com/" title="Radio Shack Home Page"> 
+										Radio Shack 
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li role="menuitem" class="left-nav"><!--Start newsletter - to be used once JS/storage is applied-->
+						<p>Newsletter</p>
+							<ul role="menu">
+								<li role="menuitem">
+									<header>
+										<h6>
+											Sign Up for the 3D Grimoire Newsletter
+										</h6>
+									</header>
+									<div><!--wrapper-->
+										<div>
+											<form name="input" action="#" method="post">   
+												First name*<input type="string" required placeholder="G.I." />
+												<br/>
+												Last name*<input type="string" required placeholder="Joe" />
+												<br/>
+												E-mail*<br/><input type="email" required placeholder="you@yourmail.com" />
+												<br/>
+												Phone Number*<input type="phone"  required placeholder="(012) 345-6789" />
+												<br/>
+												<P>*Required</P>
+											</form>
+										</div> 
+										<div>
+											<p>
+												What would you like to see on 3D Grimoire?
+											</p>
+											<br/>
+											<form name="options"> 						                    
+												<textarea required name="msg" placeholder="Fluffy kittens" width="350">
+												</textarea>
+												<br/>
+												Have experience 3D Printing?<br/><input type="radio" name="xplvl" value="yes">Yes
+																			<input type="radio" name="xplvl" value="no">No
+											</form>
+											<br/>
+											<form name="contact">
+												<p>
+													How can we contact you?
+												</p>
+												<input type="checkbox" name="notify" value="updates" checked>Phone<br/>
+												<input type="checkbox" name="notify" value="services">Email<br/><br/> 
+												<input type="submit" value="Send...">
+											</form>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li role="menuitem" tabindex="-1"> 						
+							<p title="Send me an E-mail"> 
+								Contact Me 
+							</p>						
+							<ul role="menu">	        									
+								<li role="menuitem"> 							
+									<form action="mailto:matthew.greenlaw1@student.clackamas.edu">									
+										<input type="submit" name="send" value="Send me an E-mail"/>								
+									</form>							
+								</li>						
+							</ul>					
+						</li>
+					</ul>			
+				</nav>
+			</header>
+			<main>
+				 <section >
+					<article class="secart">
+						<header>	
+							<h2> 
+								What is 3D Grimoire? 
+							</h2>
+							<p>By: Matthew Greenlaw</p>
+							<time datetime="2014-10-06 15:00">October 06</time>
+						</header>
+							<p> 
+								This site is devoted to the exhaustive documentation of everything 3D printing. If you are just getting started it can help you decide which 3D Printer is best for you. If you are experienced it can help you decide what the best heat bed temperature for your new wood grain PLA should be. 
+							</p>
+					</article>
+					<aside class="secasaide">	
+						<h3>
+							What is a Grimoire? Find out here!
+						</h3>
+						<p>
+							<a href="http://en.wikipedia.org/wiki/Grimoire"> 
+								Wikipedia: Grimoire 
+							</a>
+							<iframe src="http://en.wikipedia.org/wiki/Grimoire" title="wikipedia.org">
+							</iframe>  
+					</aside>
+					<article class="secart">
+						<header>
+							<h4> 
+								An Introduction to 3D Printing
+							</h4>
+							<p>By: Matthew Greenlaw</p>
+							<time datetime="2014-10-06 17:00">October 06</time>
+						</header>
+						<p> 
+							What do the the latest innovations in prosthetics and the new movie "The Boxtrolls" have in common? 3D printing - a technology that was just recently opened up for development by people like you. Patents covering 3D printing technology are expiring every year and as they do the consumer market is given less expensive and more accurate means to create 3D Objects. Now is the time to join the movement. 
+						</p>
+					</article>
+					<aside class="secaside">
+						<h5> 
+							Check out what's new in 3D printing! 
+						</h5>
+							<iframe src="https://plus.google.com/communities/117814474100552114108" title="wikipedia.org">
+							</iframe>  								
+					</aside>				
+				</section>
+				<section>			
+					<article>			
+						<a href="underconstruction.html" title="3D Printers">			
+							<span>			
+								<img width="350" src="media/3dprinters.jpg">		
+							</span>
+							<h6>
+								3D Printers
+							</h6>	
+						</a>				
+					</article>		
+					<article>				
+						<a href="underconstruction.html" title="3D Printer Parts">					
+							<span>						
+								<img width="350" src="media/3dprinterparts.jpg">					
+							</span>
+							<h6>
+								3D Printer Parts
+							</h6>				
+						</a>			
+					</article>		
+					<article>				
+						<a href="underconstruction.html" title="3d Printing Materials">				
+							<span>					
+								<img width="350" src="media/materials.jpg">			
+							</span>		
+							<h6>
+								3D Printing Materials
+							</h6>
+						</a>
+					</article>
+					<article>
+						<a href="underconstruction.html" title="3D Printer Host Software">	
+							<span>
+								<img width="350" src="media/hostsoftware.jpg">				
+							</span>							
+							<h6>
+								3D Printer Host Software
+							</h6>						
+						</a>					
+					</article>				
+					<article>						
+						<a href="underconstruction.html" title="3D Editing Software">							
+							<span>								
+								<img width="350" src="media/3deditingsoftware.jpg">							
+							</span>
+							<h6>
+								3D Editing Software
+							</h6>					
+						</a>
+					</article>				
+				</section>			
+			</main>
+			
+			<footer>				
+				<p>
+					<span>
+						Find me on social media:
+					</span>					
+					<a href="https://plus.google.com/+MatthewGreenlaw/">
+						Google Plus, 
+					</a>					
+					<a href="https://www.youtube.com/channel/UCUltPErrkJDcFkwdtS-OhDA/videos">
+						YouTube, 
+					</a>					
+					<a href="https://www.facebook.com/matthew.greenlaw.50">
+						Facebook, 
+					</a>					
+					<a href="https://www.linkedin.com/pub/matthew-greenlaw/8b/b4a/a5b">
+						Linkedin, 
+					</a>				
+				</p>				
+				<button type=button onclick="alert('This web page was developed by Matthew K. Greenlaw on 06OCT14.')"> 
+					About this site 
+				</button>
+				<p>					
+					<small>
+						&copy; 2014 Matthew Greenlaw 
+					</small>				
+				</p>			
+			</footer>		
+		</div>	
+	</body>
+</html>

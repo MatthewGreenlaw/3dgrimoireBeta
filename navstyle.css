@@ -1,0 +1,75 @@
+﻿/*===========================================================================================================
+=============================================================================================================
+ ________  ________          ________  ________  ___  _____ ______   ________  ___  ________  _______      
+|\_____  \|\   ___ \        |\   ____\|\   __  \|\  \|\   _ \  _   \|\   __  \|\  \|\   __  \|\  ___ \     
+\|____|\ /\ \  \_|\ \       \ \  \___|\ \  \|\  \ \  \ \  \\\__\ \  \ \  \|\  \ \  \ \  \|\  \ \   __/|    
+      \|\  \ \  \ \\ \       \ \  \  __\ \   _  _\ \  \ \  \\|__| \  \ \  \\\  \ \  \ \   _  _\ \  \_|/__  
+     __\_\  \ \  \_\\ \       \ \  \|\  \ \  \\  \\ \  \ \  \    \ \  \ \  \\\  \ \  \ \  \\  \\ \  \_|\ \ 
+    |\_______\ \_______\       \ \_______\ \__\\ _\\ \__\ \__\    \ \__\ \_______\ \__\ \__\\ _\\ \_______\
+    \|_______|\|_______|        \|_______|\|__|\|__|\|__|\|__|     \|__|\|_______|\|__|\|__|\|__|\|_______|
+                                                                                                           
+I left off trying to scale the header and nav to fit with different screan sizes. 
+I couldn't figure it out.
+============================================================================================================
+==========================================================================================================*/
+
+
+
+
+/* define the navigation bar*/
+nav> ul{
+height:1em;
+width:100%;
+padding:0;
+margin:auto;
+
+}
+
+/*define menuitems*/
+nav > ul > li { 
+display:inline-block; 
+padding-left:auto;
+padding-right:auto; 
+width:17%;
+height:1em;
+top:0;
+left:0;
+text-align:center;
+font-size:1em;
+border-radius: 5px;
+border: 2px solid #ccc;
+}
+
+/*define menus*/
+nav > ul > li > ul 
+{ background: #ddd; 
+padding:0em; 
+position: absolute; 
+z-index: 100; 
+}
+
+/* if I need another menu
+nav > ul > li > ul > li > ul { 
+background: #eee; 
+padding:0.5em; 
+position: absolute;
+left: 90%; 
+top: 0; 
+z-index: 1001; 
+}
+*/
+
+/* hide the sub-menu */
+nav ul > li > ul,
+nav ul > li > ul > li > ul { 
+display:none; 
+}
+
+/* show the menu when hovering */
+nav ul > li:hover > ul,
+nav ul > li > ul > li:hover > ul { 
+display:block; 
+width:15em; 
+}
+
+
