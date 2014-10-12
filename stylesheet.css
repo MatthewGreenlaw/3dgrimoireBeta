@@ -20,7 +20,7 @@ body > div > img{
 position: fixed;
 z-index:-2;
 width:1200px;
-]
+}
 
 /*create the containing block for the h1 and nav by making header relative to its self.
 make the image go behind the absolute div by z-indexing it first in the stack*/
@@ -40,8 +40,10 @@ width: 1200px;
 margin-left:auto;
 margin-right:auto;
 border-radius: 5px;
-position:fixed;
+position:absolute;
 z-index:-99;
+top:0;
+left:0;
 }
 
 body > div > header span {
@@ -56,6 +58,7 @@ margin:-24px;
 }
 
 body > div> header h1 {
+visibility:hidden;
 position: absolute;
 top:0;
 left:0;
@@ -100,11 +103,14 @@ body > div >  main {
     margin-left:auto;
 	margin-right:auto;
     padding: 0%;
+	
     }
 
 body  > div > main > section{
 width: inherit;
 display:block;
+
+
 }
 
 body > div> main > section > article{
@@ -114,6 +120,11 @@ position:left;
 word-wrap:break-word;
 float:left;
 width: 1200px;
+vertical-align:baseline;
+background-color:#222;
+margin-top:2em;
+margin-bottom:2em;
+
 }
 
 body > div> main > section > article.secart{
