@@ -58,7 +58,7 @@ margin:-24px;
 }
 
 body > div> header h1 {
-visibility:hidden;
+visibility:hidden; /*Added a photo so this is obsolete- kept it for reference*/
 position: absolute;
 top:0;
 left:0;
@@ -99,10 +99,14 @@ z-index:2;
 body > div >  main {
     font-family: Sans-serif;
     font-size: 1em;
+	color:white;
     width: 1200px;
     margin-left:auto;
 	margin-right:auto;
     padding: 0%;
+	position:absolute;
+	top:500px;
+	left:200px;
 	
     }
 
@@ -116,16 +120,58 @@ display:block;
 body > div> main > section > article{
 border: 2px solid black;
 display:inline-block;
-position:left;
 word-wrap:break-word;
 float:left;
 width: 1200px;
-vertical-align:baseline;
-background-color:#222;
+
+background-color:#111;
 margin-top:2em;
 margin-bottom:2em;
+margin-right:0px;
+height:232px;
+padding-left:5px;
 
 }
+
+body > div> main > section > article.secart{
+border: 2px solid black;
+display:inline-block;
+word-wrap:break-word;
+float:left;
+width: 570px;
+
+background-color:#111;
+margin-top:2em;
+margin-bottom:2em;
+margin-right:0px;
+height:232px;
+padding-left:5px;
+
+}
+
+body > div> main > section > aside{
+border: 2px solid black;
+/*
+display:inline-block;
+
+word-wrap:break-word;
+*/
+float:right;
+
+width: 570px;
+
+
+
+background-color:#111;
+
+margin-top:2em;
+margin-bottom:2em;
+margin-left:0px;
+height:232px;
+}
+
+body > div> main > section > aside iframe{
+visibility:hidden; /*just for development- unhide on live site*/
 
 body > div> main > section > article.secart{
 border: 2px solid black;
@@ -145,7 +191,7 @@ left:20px;
 top:20px;
 word-wrap:break-word;
 float:right;
-width:600pxpx;
+width:696pxpx;
 height: 100%;
 z-index:-100;
 }
