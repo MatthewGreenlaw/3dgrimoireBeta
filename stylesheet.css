@@ -226,6 +226,7 @@ footer
     padding: .5em;
 
     text-align: center;
+    display: block;
 
     color: #333;
     border-top: 1px solid gray;
@@ -341,7 +342,11 @@ footer > div > a
     width: 50% ;
 
     vertical-align: middle;
+
+    display: inline;
 }
+
+
 
 aside
 {
