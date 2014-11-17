@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 
 <html>
@@ -21,18 +20,13 @@
 
 		<script src="modernizr-1.5.js"></script>
 
-		<style type="text/css">
-			
-			
-
-		</style>
-
-		<title>3D Grimoire</title>
+		<title> 
+			3D Grimoire 
+		</title>
 
 	</head>
-	
+	<body style="color:#707070;font:75% Verdana,Helvetica,Arial,sans-serif;padding:0;">
 
-	<body style="color:white;font:75% Verdana,Helvetica,Arial,sans-serif;padding:0;">
 		<div> <!--Page Container -->	
 			<header id="#top">	
 				<img src="media/logo.jpg" alt="Logo">
@@ -43,10 +37,15 @@
 								Directory 
 							</p>						
 							<ul role="menu" aria-haspopup="true" >	
-
+								<li>
+									<a href="index.html" title="Home Page">
+										Home 
+									</a>
+								</li>					
+								
 								<li role="menuitem" tabindex="-1">
 									 <a href="underconstruction.html" title="Compare 3D Printers"> 
-										3D Printers 
+									 	3D Printers 
 									 </a>						
 								</li>						
 								
@@ -56,7 +55,7 @@
 									</a>
 								</li>							
 								
-								<li role="menuitem" tabindex="-1">								
+								<li>								
 									<a href="underconstruction.html" title="Compare Extrudable Materials"> 
 										3D Printing Materials 
 									</a>						
@@ -74,12 +73,11 @@
 									</a>							
 								</li>
 
-								<li role="menuitem" tabindex="-1">
+								<li>
 									<a href="missionandaudience.html" title="Site Plan">
 										About this site 
 									</a>
-								</li>					
-														
+								</li>						
 							</ul>
 						</li>								
 						
@@ -107,13 +105,21 @@
 						</li>
 
 						<li role="menuitem" tabindex="-1"><!--Start newsletter - to be used once JS/storage is applied-->
-						<p>Newsletter</p>
+							<p>
+								Newsletter
+							</p>
 							<ul role="menu">
 								<li role="menuitem">
-									<h6>
-										Sign Up for the 3D Grimoire Newsletter
-									</h6>
-									<p>Coming to you in Week 7</p>
+									<header>
+										<h1>
+											Sign Up for the 3D Grimoire Newsletter
+										</h1>
+									</header>
+									<div><!--wrapper-->
+										<p>
+											Coming to you in Week 7
+										</p>
+									</div>
 								</li>
 							</ul>
 						</li>
@@ -134,33 +140,61 @@
 			
 
 			<main>
-				 <section class="splitright">
+				 <section class="splitright" id="fit">
 					<article class="infoarticle">
-						<h1 style="font-size: 2em"> 
-							What is 3D Grimoire? 
-						</h1>
-						<p style="padding-left:.5em;"><small>By: Matthew Greenlaw</small></p>
-						<time datetime="2014-10-06 15:00"><small>October 31</small></time>
-						<p style="font-size: 1.5em; padding-left:.5em;"> 
-							Magicians have used a tome called a "Grimoire" (grÍm’wä(r)’) to document how they cast their spells and make their magical items for ages. Magicians passed these grimoires along to their successors and used them to share practices with their cohorts. 3D printing is kind of like magic; you can take an object, alter it in any way you want, and quickly create a new version. You can even send an object to your cohort who can adjust it to their liking and make their own copies. 3D printer operators have to remember a lot about their projects so it is helpful to write down best practices and material characteristics to use on other projects. 3D Grimoire is your "tomb of magic".
+						<header>
+							<p style="font-size: 2em; padding-left:.5em;">
+								<b><u>What is 3DGrimoire.com?</u></b>:
+							</p>
+						</header>
+						<p style="font-size: 1.5em; padding-left:.5em; line-height: 90%;">				
+						3D Grimoire  (gr&Iacute;m&rsquo;w&auml;(r)&rsquo;) is devoted to the exhaustive documentation of everything 3D printing. 3D printers are robots that require flawless integration between the “code world” and the “real world”. The entire 3D printing process has its own problem set such as mechanical problems and finding out the cooling characteristics of different types of plastics. 3D Grimoire is designed to be a friendly platform for both beginners and experts by providing the latest news and information, best practices, solutions to common problems, and a strong community involvement.
 						</p>
-						<br/>
-						<p style="font-size: 1.5em; padding-left:.5em;">
-							3D Grimoire is designed to be a friendly platform for both beginners and experts by providing the latest news and information, best practices, solutions to common problems, and a strong community involvement.
-						</p>
-						<br/>
 					</article>
 
 					<article class="infoarticle">
-						<h1>
-							3D printing in action
-						</h1>
-						<iframe width="560" height="300" src="http://www.youtube.com/embed/I-px1pnYdY8" allowfullscreen></iframe>
+ 						<header>
+							<p style="font-size: 2em; padding-left:.5em;">
+								<b><u> How web-savvy are expected average users?</u></b>:
+							</p>
+						</header>
+
+						<p style="font-size: 1.5em; padding-left:.5em;">The expected average 3D Grimoire user should have a high level of web-savviness; it comes with the territory. In order to run most 3D printers you need to be familiar with languages like C++ and their children like G-Code. Depending on what platform someone runs their printer on they will also be comfortable with using the console. Someone who has spent the time to learn their way around the inside of a robot has also probably learned their way around the inside of a website. 
+						</p>
+
+						<br/> 
+
+						<p style="font-size: 1.5em; padding-left:.5em;">It is my goal to provide an easy to use, dynamic user experience regardless of how web-savvy a user may be. User satisfaction is key! 3D Grimoire is designed with navigation at it’s heart so you don’t have to waste valuable printing time looking up solutions to your problem. Do you need to know the best extrusion temperature to have your first layer of black PLA stick to your print bed? It sure isn’t the same as white PLA! First time users and veteran users alike can find out that and more within just a few clicks after visiting 3D Grimoire.
+						</p>
 					</article>
 
+					<article class="infoarticle">
+						<header>
+							<p style="font-size: 2em; padding-left:.5em;">
+								<b><u>What era and type of browser does 3D Grimoire support?</u></b>:
+							</p>
+						</header>
+						<p style="font-size: 1.5em; padding-left:.5em;">3D Grimoire should support most modern browsers thanks to <a href="https://www.w3.org/community/webed/wiki/Optimizing_content_for_different_browsers:_the_RIGHT_way" title="w3.ORG">certain formatting rules</a> applied through development. 3D Grimoire recommends updating to the newest version of Mozilla Firefox or Google Chrome to take full advantage of the site’s features.
+						</p>
+					</article>
+				
+
+				<article class="infoarticle">
+						<header>
+							<p style="font-size: 2em; padding-left:.5em;">
+								<b><u>What is the minimum screen resolution 3D Grimoire supports?</u></b>:
+							</p>
+						</header>
+						<p style="font-size: 1.5em; padding-left:.5em;">Thanks to <a href="http://www.htmlgoodies.com/beyond/css/introduction-to-css-media-queries.html" title="HTMLGoodies.com" target="_blank">CSS3 media queries</a>, 3D Grimoire should be able to run correctly on most screen resolutions and be printer friendly (once I have debugged that system). Until then, it is best displayed at a resolution of 1600x900. </p>
+				</article>
+
+				<article class="infoarticle">
+					<img style="position: relative; transform: translateY(0%);" width="500px" src="media/sitemap.jpg" alt="Site Map"></img>
+				</article>
 
 				</section>
 				
+
 				<section class="splitleft">			
 					<article>			
 						<a href="underconstruction.html" title="3D Printers">			
@@ -217,50 +251,57 @@
 			
 
 			<footer>
-				<div class="halfsplitleft">
-					<small>
-						&copy; 2014 Matthew Greenlaw 
-					</small>
-											
-					<a href="missionandaudience.html" title="Site Plan">
-						<p>About This Site</p> 
-					</a>
-					<a href="#top" title="Go to Top"> 
-						<p>Go to Top</p> 
-					</a>				
-				</div >
-				<div  class="halfsplitright">
-					<address>
-							Find me on social media:			
-						<a href="https://plus.google.com/+MatthewGreenlaw/" title="Find me on Google+" target="_blank">
-							<p>Google Plus</p>
-						</a>					
-						<a href="https://www.youtube.com/channel/UCUltPErrkJDcFkwdtS-OhDA/videos" title="Find me on YT" target="_blank">
-							<p>YouTube</p>
-						</a>					
-					</address>				
-				</div >
-			</footer>
+			<div class="halfsplitleft">
+				<small>
+					&copy; 2014 Matthew Greenlaw 
+				</small>
+										
+				<a href="missionandaudience.html" title="Site Plan">
+					<p>About This Site</p> 
+				</a>
+				<a href="#top" title="Go to Top"> 
+					<p>Go to Top</p> 
+				</a>				
+			</div >
+			<div  class="halfsplitright">
+				<address>
+						Find me on social media:			
+					<a href="https://plus.google.com/+MatthewGreenlaw/" title="Find me on Google+" target="_blank">
+						<p>Google Plus</p>
+					</a>					
+					<a href="https://www.youtube.com/channel/UCUltPErrkJDcFkwdtS-OhDA/videos" title="Find me on YT" target="_blank">
+						<p>YouTube</p>
+					</a>					
+				</address>				
+			</div >
+		</footer>
 		</div>
 			
 		<aside>
 			<section>
 				<article class="halfsplitleft">	
-					<h5>
+					<h1>
 						What is a Grimoire? Find out here!
-					</h5>
-					<iframe src="http://en.wikipedia.org/wiki/Grimoire" title="Wikipedia.org"></iframe>  
+					</h1>
+					<p>
+						<a href="http://en.wikipedia.org/wiki/Grimoire" title="Wikipedia.org"> 
+							Wikipedia: Grimoire 
+						</a>
+						<br/>
+						<iframe src="http://en.wikipedia.org/wiki/Grimoire" title="Wikipedia.org">
+						</iframe>  
 				</article>
 
 				<article class="halfsplitright">
-					<h5> 
+					<h1> 
 						Check out what's new in 3D printing! 
-					</h5>
+					</h1>
 						<iframe src="http://3dprintingindustry.com/" title="3dprintingindustry.com">
 						</iframe>  								
 				</article>
 			</section>
 		</aside>
-
+		
+		
 	</body>
 </html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+				Author: Matthew K. Greenlaw
+				Date: 13OCT14
+				Week Submitted: Week 3
+		-->
+
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="A Site Map for 3DGrimoire.com">
+		<meta name="keywords" content="Site Map, 3DGrimoire.com">
+		<meta name="author" content="Matthew Greenlaw">
+		<title>3D Grimoire Mission and Audience</title>
+
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<link rel="shortcut icon" href="3dgrimoireicon.ico">
+
+				<style type="text/css">
+			
+			nav 
+			{
+			text-align: center;
+			height:4em;
+			background-color: rgba(0,0,0,0.75);
+			-webkit-box-shadow: 0px 0px 84px 25px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 0px 84px 25px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 84px 25px rgba(0,0,0,0.75);
+
+			border-radius: 200px 0px 200px 0px;
+			-moz-border-radius: 200px 0px 200px 0px;
+			-webkit-border-radius: 200px 0px 200px 0px;
+			border: 24px inset #000000;
+			}
+
+			nav:hover 
+			{
+			height:4em;
+			background-color:rgba(0,0,0,0.75);
+			-webkit-box-shadow: 0px 0px 139px -26px rgba(214,214,182,1);
+			-moz-box-shadow: 0px 0px 139px -26px rgba(214,214,182,1);
+			box-shadow: 0px 0px 139px -26px rgba(214,214,182,1);
+			}
+			/* define the navigation bar*/
+			nav > ul
+			{
+			height:4em;
+			width:100%;
+			margin:auto;
+			top: 230px;
+			}
+
+			/*define menuitems*/
+			nav > ul > li 
+			{ 
+			display:inline-block; 
+			width:17%;
+			height:2em;
+			top:0;
+			left:0;
+			text-align:center;
+			font-size:2em;
+			background-color: rgba(0,0,0,1);
+			}
+
+			nav > ul > li:hover > p
+			{ 
+			text-decoration: underline;
+			}
+
+			nav > ul > li > p 
+			{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			}
+
+			/*define menus*/
+			nav > ul > li > ul 
+			{ 
+			background: rgba(0,0,0,1);
+			padding-top:3em; 
+			position: absolute; 
+			font-size:.75em;
+			width:17%;
+			}
+
+			/* hide the sub-menu */
+			nav ul > li > ul,
+			nav ul > li > ul > li > ul 
+			{ 
+			display:none; 
+			}
+
+			/* show the menu when hovering */
+			nav ul > li:hover > ul,
+			nav ul > li > ul > li:hover > ul 
+			{
+			display:block; 
+			width:16.5%; 
+			text-align:left;
+			margin-top:19px;
+			padding-left: .3em;
+			z-index:99;
+			-webkit-box-shadow: 0px -72px 116px -52px rgba(214,214,182,0.42);
+			-moz-box-shadow: 0px -72px 116px -52px rgba(214,214,182,0.42);
+			box-shadow: 0px -72px 116px -52px rgba(214,214,182,0.42);
+			}
+			
+			nav ul > li:hover > ul > li,
+			nav ul > li > ul > li:hover > ul >li
+			{ 
+			background-image: url(media/arrow.gif);
+			background-repeat: no-repeat;
+			background-position: 0 .5em;
+			margin-top:10px;
+			padding-left: 10px;
+			list-style: none;
+			width:90%;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+
+ 			}
+
+			nav ul > li:hover > ul:hover > li > p,
+			nav ul > li > ul > li:hover > p
+			{
+				color:red;
+				text-shadow: 7px 0px 30px rgba(255, 255, 255, 1);
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<header id="#top">
+			<p>3D Grimoire Mission and Audience</p>	
+		</header><!-- /header -->
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html" title="back to home">Back to home</a></li>
+				<li>
+					<a href="sitemap.html" title="">Site Map</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+		<section>
+			<article>
+				<header>
+					<p>
+						<b><u>What is 3DGrimoire.com?</u></b>:
+					</p>
+				</header>
+				<p>				
+3D Grimoire  (gr&Iacute;m&rsquo;w&auml;(r)&rsquo;) is devoted to the exhaustive documentation of everything 3D printing. 3D printers are robots that require flawless integration between the “code world” and the “real world”. The entire 3D printing process has its own problem set such as mechanical problems and finding out the cooling characteristics of different types of plastics. 3D Grimoire is designed to be a friendly platform for both beginners and experts by providing the latest news and information, best practices, solutions to common problems, and a strong community involvement.	
+				</p>
+			</article>	
+			<article>
+				<header>
+					<p>
+						<b><u> How web-savvy are expected average users?</u></b>:
+					</p>
+				</header>
+
+				<p>The expected average 3D Grimoire user should have a high level of web-savviness; it comes with the territory. In order to run most 3D printers you need to be familiar with languages like C++ and their children like G-Code. Depending on what platform someone runs their printer on they will also be comfortable with using the console. Someone who has spent the time to learn their way around the inside of a robot has also probably learned their way around the inside of a website. 
+				</p>
+				<p>It is my goal to provide an easy to use, dynamic user experience regardless of how web-savvy a user may be. User satisfaction is key! 3D Grimoire is designed with navigation at it’s heart so you don’t have to waste valuable printing time looking up solutions to your problem. Do you need to know the best extrusion temperature to have your first layer of black PLA stick to your print bed? It sure isn’t the same as white PLA! First time users and veteran users alike can find out that and more within just a few clicks after visiting 3D Grimoire.
+				</p>
+			</article>
+			<article>
+				<header>
+					<p>
+						<b><u>What era and type of browser does 3D Grimoire support?</u></b>:
+					</p>
+				</header>
+				<p>3D Grimoire should support most modern browsers thanks to <a href="https://www.w3.org/community/webed/wiki/Optimizing_content_for_different_browsers:_the_RIGHT_way" title="w3.ORG">certain formatting rules</a> applied through development. 3D Grimoire recommends updating to the newest version of Mozilla Firefox or Google Chrome to take full advantage of the site’s features.
+				</p>
+			</article>
+			<article>
+				<header>
+					<p>
+						<b><u>What is the minimum screen resolution 3D Grimoire supports?</u></b>:
+					</p>
+				</header>
+				<p>Thanks to <a href="http://www.htmlgoodies.com/beyond/css/introduction-to-css-media-queries.html" title="HTMLGoodies.com" target="_blank">CSS3 media queries</a>, 3D Grimoire should be able to run correctly on most screen resolutions and be printer friendly (once I have debugged that system). Until then, it is best displayed at a resolution of 1600x900. </p>
+			</article>
+		</section>
+		<footer>
+			<a href="index.html" title="Go to home">Go to home</a>
+			<a href="#top" title="Go to top">Go to Top</a>
+		</footer>
+		</main>
+	</body>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="A Site Map for 3DGrimoire.com">
+		<meta name="keywords" content="Site Map, 3DGrimoire.com">
+		<meta name="author" content="Matthew Greenlaw">
+		<title>3D Grimoire Site Map</title>
+
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<link rel="shortcut icon" href="3dgrimoireicon.ico">
+
+				<style type="text/css">
+			
+			nav 
+			{
+			text-align: center;
+			height:4em;
+			background-color: rgba(0,0,0,0.75);
+			-webkit-box-shadow: 0px 0px 84px 25px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 0px 84px 25px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 84px 25px rgba(0,0,0,0.75);
+
+			border-radius: 200px 0px 200px 0px;
+			-moz-border-radius: 200px 0px 200px 0px;
+			-webkit-border-radius: 200px 0px 200px 0px;
+			border: 24px inset #000000;
+			}
+
+			nav:hover 
+			{
+			height:4em;
+			background-color:rgba(0,0,0,0.75);
+			-webkit-box-shadow: 0px 0px 139px -26px rgba(214,214,182,1);
+			-moz-box-shadow: 0px 0px 139px -26px rgba(214,214,182,1);
+			box-shadow: 0px 0px 139px -26px rgba(214,214,182,1);
+			}
+			/* define the navigation bar*/
+			nav > ul
+			{
+			height:4em;
+			width:100%;
+			margin:auto;
+			top: 230px;
+			}
+
+			/*define menuitems*/
+			nav > ul > li 
+			{ 
+			display:inline-block; 
+			width:17%;
+			height:2em;
+			top:0;
+			left:0;
+			text-align:center;
+			font-size:2em;
+			background-color: rgba(0,0,0,1);
+			}
+
+			nav > ul > li:hover > p
+			{ 
+			text-decoration: underline;
+			}
+
+			nav > ul > li > p 
+			{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			}
+
+			/*define menus*/
+			nav > ul > li > ul 
+			{ 
+			background: rgba(0,0,0,1);
+			padding-top:3em; 
+			position: absolute; 
+			font-size:.75em;
+			width:17%;
+			}
+
+			/* hide the sub-menu */
+			nav ul > li > ul,
+			nav ul > li > ul > li > ul 
+			{ 
+			display:none; 
+			}
+
+			/* show the menu when hovering */
+			nav ul > li:hover > ul,
+			nav ul > li > ul > li:hover > ul 
+			{
+			display:block; 
+			width:16.5%; 
+			text-align:left;
+			margin-top:19px;
+			padding-left: .3em;
+			z-index:99;
+			-webkit-box-shadow: 0px -72px 116px -52px rgba(214,214,182,0.42);
+			-moz-box-shadow: 0px -72px 116px -52px rgba(214,214,182,0.42);
+			box-shadow: 0px -72px 116px -52px rgba(214,214,182,0.42);
+			}
+			
+			nav ul > li:hover > ul > li,
+			nav ul > li > ul > li:hover > ul >li
+			{ 
+			background-image: url(media/arrow.gif);
+			background-repeat: no-repeat;
+			background-position: 0 .5em;
+			margin-top:10px;
+			padding-left: 10px;
+			list-style: none;
+			width:90%;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+
+ 			}
+
+			nav ul > li:hover > ul:hover > li > p,
+			nav ul > li > ul > li:hover > p
+			{
+				color:red;
+				text-shadow: 7px 0px 30px rgba(255, 255, 255, 1);
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<header id="#top">
+				<p>3D Grimoire Site Map</p>	
+					<img src="media/logo.jpg" alt="Logo">
+						<nav role="navigation" aria-label="Main menu"> <!--Move this to the top once CSS is applied.-->				
+							<ul role="menubar">				
+								<li role="menuitem" tabindex="0" aria-haspopup="true">
+									<p> 
+										Directory 
+									</p>						
+									<ul role="menu" aria-haspopup="true" >	
+										<li>
+											<a href="missionandaudience.html" title="Site Plan">
+												About this site 
+											</a>
+										</li>					
+										<li role="menuitem" tabindex="-1">
+											 <a href="underconstruction.html" title="Compare 3D Printers"> 3D Printers </a>						
+										</li>						
+										<li role="menuitem" tabindex="-1">								
+											<a href="underconstruction.html" title="Compare 3D Printer Components"> 3D Printer Parts </a>
+										</li>							
+										<li>								
+											<a href="underconstruction.html" title="Compare Extrudable Materials"> 
+												3D Printing Materials 
+											</a>						
+										</li>
+										<li role="menuitem" tabindex="-1">								
+											<a href="underconstruction.html" title="Compare 3D Printer Host software"> 
+												3D Printer Host Software 
+											</a>							
+										</li>
+										<li role="menuitem" tabindex="-1">								
+											<a href="underconstruction.html" title="Compare 3D Editing Software"> 
+												3D Editing Software
+											</a>							
+										</li>						
+									</ul>
+								</li>								
+								
+								<li role="menuitem" tabindex="-1">						
+									<p> 
+										External Links 
+									</p>
+									<ul role="menu">							
+										<li role="menuitem" tabindex="-1">								
+											<a href="http://www.makerbot.com/" title="Makerbot Home Page"> 
+												Makerbot 
+											</a>							
+										</li>
+										<li role="menuitem" tabindex="-1">								
+											<a href="http://www.printrbot.com/" title="Printrbot Home Page"> 
+												Printrbot 
+											</a>							
+										</li>
+										<li role="menuitem" tabindex="-1">								
+											<a href="http://radioshack.com/" title="Radio Shack Home Page"> 
+												Radio Shack 
+											</a>
+										</li>
+									</ul>
+								</li>
+		
+								<li role="menuitem" tabindex="-1"><!--Start newsletter - to be used once JS/storage is applied-->
+								<p>Newsletter</p>
+									<ul role="menu">
+										<li role="menuitem">
+											<header>
+												<h6>
+													Sign Up for the 3D Grimoire Newsletter
+												</h6>
+											</header>
+											<div><!--wrapper-->
+												<p>Coming to you in Week 7</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li role="menuitem" tabindex="-1"> 						
+									<p title="Send me an E-mail"> 
+										Contact Me 
+									</p>						
+									<ul role="menu">	        									
+										<li role="menuitem"> 							
+											<a href="mailto:matthew.greenlaw1@student.clackamas.edu" Title="E-mail Me"> E-mail Me												
+											</a>							
+										</li>						
+									</ul>					
+								</li>
+							</ul>			
+						</nav>
+				</header><!-- /header -->
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html" title="Go home">Back to home</a>
+						</li>
+		
+						<li> 
+							<a href="missionandaudience.html" title="Mission and audience">Mission and Audience</a>
+						</li>
+					</ul>	
+				</nav>
+				<main>
+					<section>
+						<article>
+							<img src="media/sitemap.jpg" alt="Site Map">
+						</article>
+					</section>
+				</main>
+				<footer>
+					<a href="#top" title="Go to top">Go to Top</a>
+				</footer>
+			</div>	
+	</body>

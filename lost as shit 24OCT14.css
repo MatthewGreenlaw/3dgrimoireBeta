@@ -1,0 +1,382 @@
+/*----------------------------------------------------------------
+[Table of contents]
+
+0.Reset
+1.Global
+2.Layout
+3.Header
+4.Navigation
+5.Nodes
+6.Comments
+7.Sidebars
+8.Blocks
+9.Footer
+10.CSS Support
+11.Advanced
+
+[Font sizes - based on 75%/12px body]
+30px = 2.5em
+28px = 2.3333em
+26px = 2.166667em
+24px = 2em
+22px = 1.8333em
+20px = 1.6667em
+18px = 1.5em
+16px = 1.333333em
+14px = 1.1667em
+12px = 1em
+11px = .9167em
+10px = .8333em
+9px = .6667em
+
+Equasion for font sizing: 
+-Desired in px ÷ Default (or parent) in px = sizing in em
+
+----------------------------------------------------------------*/
+
+/* 1. Globals
+///////////////////////////////////////////////////////////////////////////////*/
+
+*
+{
+   margin: 0;
+   padding: 0;
+}
+
+body > div > *
+{
+   position: absolute;
+}
+
+
+/* 2.Layout
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+html
+{
+   height: 300%;
+   margin: 0;
+}
+
+
+body
+{
+   background-color: #444;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   width: 1200px;
+}
+
+body > div
+{
+           background-size: cover;
+   background: url(background1.jpg) no-repeat center center fixed;
+   border-radius: 5px;
+   border: 5px solid black;
+   height: 100%;
+   left: 0;
+   margin-left: auto;
+   margin-right: auto;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   top: 0;
+   width: 1200px;
+   z-index: 1;
+      -moz-background-size: cover;
+        -o-background-size: cover;
+   -webkit-background-size: cover;
+}
+
+
+
+/* 3.Header
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+body > div > header
+{
+   height: 10%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+body > div > header img
+{
+   margin-left: auto;
+   margin-right: auto;
+   width: 1200px;
+}
+
+
+/* 4.Navigation
+///////////////////////////////////////////////////////////////////////////////*/
+
+nav
+{
+   background: #aaa;
+   border: 5px solid black;
+   font-size: 1em;
+   height: 1.5em;
+   position: absolute;
+   text-align: center;
+   top: 250px;
+   width: 1195px;
+}
+
+
+/*Main Content
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+body > div > section.topsection
+{
+   height: 20%;
+   left: 0;
+   top: 10%;
+   width: 100%;
+}
+
+body > div > section.topsection > article.toparticle
+{
+   background: #fff url(background.png) 50% 0;
+   display: inline;
+   float: left;
+   height: 100%;
+   left: 0;
+   top: 0;
+   width: 595px;
+   word-wrap: break-word;
+}
+
+body > div >  section
+{
+	top: 32%;
+   height: 60%;
+   margin-bottom: 20px;
+   width: inherit;
+}
+
+
+
+body > div > section > article
+{
+   background: url(background.png) no-repeat center center;
+   height: 300px;
+   left: 0;
+   margin-top: 1em;
+   text-align: center;
+   top: 0;
+   width: 1200px;
+      -moz-background-size: cover;
+        -o-background-size: cover;
+   -webkit-background-size: cover;
+}
+
+body > div > section > article > *:not(header)
+{
+   font-size: 1em;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+   width: 50%;
+}
+
+body > div >section > article > a > span
+{
+   height: 100%;
+   left: 0;
+   padding: auto;
+   top: 0;
+   -webkit-transition: 1s ease;
+}
+
+html > body > div > section > article > a
+{
+   background-color: rgba(139, 151, 153, 100);
+   font-size: 1em;
+   height: 100%;
+   opacity: 10;
+   position: relative;
+   text-align: center;
+   transition-timing-function: ease;
+   z-index: 500;
+   -webkit-transition-delay: 0s;
+   -webkit-transition-duration: .4s;
+   -webkit-transition-property: opacity;
+}
+
+/* Pop Articles */
+html > body > div > section > article > a:hover
+{
+   background-color: rgba(139, 151, 153, 100);
+   font-size: 1em;
+   height: 100%;
+   opacity: 100;
+   position: relative;
+   text-align: center;
+   transition-timing-function: ease;
+   z-index: 500;
+   -webkit-transition-delay: 0s;
+   -webkit-transition-duration: .4s;
+   -webkit-transition-property: opacity;
+}
+
+html > body > div > section > article > a > h6
+{
+   font-size: 1em;
+   opacity: 0;
+}
+
+/* Pop Article's Words */
+html > body > div > section > article > a:hover > h6
+{
+   bottom: 0;
+   color: red;
+   font-size: 1em;
+   left: 0;
+   opacity: 100;
+   overflow: hidden;
+   position: absolute;
+   right: 0;
+   top: 0;
+   transition-timing-function: ease;
+   z-index: 200;
+   -webkit-transition-delay: 0s;
+   -webkit-transition-duration: .4s;
+   -webkit-transition-property: opacity ;
+}
+
+
+aside
+{
+   display: none;
+}
+/*Aside
+///////////////////////////////////////////////////////////////////////////////
+
+
+/*footer
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+body > div > footer
+{
+	top: 92%;
+	height: 100%
+   background-size: 100% 100%;
+   background: #000 url(media/footer.png) repeate-x fixed top left;
+   bottom: 0;
+   color: #fff;
+   display: block;
+   margin: 0 0 10px;
+   position: absolute;
+   z-index: 300;
+
+   font: 75% Sans-serif;
+}
+
+footer div
+{
+   display: inline-block;
+   font-size: 1em;
+   height: 1em;
+   left: 0;
+   margin: auto;
+   text-align: center;
+   top: 50%;
+   width: auto;
+}
+
+footer p > a
+{
+   background-color: #111;
+   border: 2px solid black;
+   margin-left: 1em;
+
+   top-margin: 50%;
+}
+
+footer a
+{
+   background-color: #111;
+   border: 2px solid black;
+   padding: .5em;
+
+   top-margin: 50%;
+}
+
+.splitleft
+{
+   float: left;
+   margin-top: 1em;
+   width: 40%;
+}
+
+.splitright
+{
+   float: right;
+   margin-top: 1em;
+   width: 60%;
+}
+
+/*link styling
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+/*link underline*/
+a:link
+{
+   text-decoration: none !important;
+}
+
+a:visited
+{
+   text-decoration: none !important;
+}
+
+a:hover
+{
+   color: black;
+   text-decoration: underline !important;
+}
+
+a:active
+{
+   text-decoration: underline !important;
+}
+
+
+/*link colouring
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+/* unvisited link */
+a:link
+{
+   color: black;
+}
+
+/* visited link */
+a:visited
+{
+   color: black;
+}
+
+/* mouse over link */
+a:hover
+{
+   color: black;
+}
+
+/* selected link */
+a:active
+{
+   color: black;
+}

@@ -1,0 +1,547 @@
+/*----------------------------------------------------------------
+[Table of contents]
+
+0.Reset
+1.Global
+2.Layout
+3.Header
+4.Navigation
+5.Nodes
+6.Comments
+7.Sidebars
+8.Blocks
+9.Footer
+10.CSS Support
+11.Advanced
+
+[Font sizes - based on 75%/12px body]
+30px = 2.5em
+28px = 2.3333em
+26px = 2.166667em
+24px = 2em
+22px = 1.8333em
+20px = 1.6667em
+18px = 1.5em
+16px = 1.333333em
+14px = 1.1667em
+12px = 1em
+11px = .9167em
+10px = .8333em
+9px = .6667em
+
+Equasion for font sizing: 
+-Desired in px ÷ Default (or parent) in px = sizing in em
+
+----------------------------------------------------------------*/
+
+/* 1. Globals
+///////////////////////////////////////////////////////////////////////////////*/
+
+*
+{
+   margin: 0;
+   padding: 0;
+}
+
+
+/* 2.Layout
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+html
+{
+   height: 100%;
+   margin: 0;
+}
+
+
+body
+{
+   background-color: #444;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   width: 1200px;
+}
+
+body > div
+{
+           background-size: cover;
+   background: url(background1.jpg) no-repeat center center fixed;
+   border-radius: 5px;
+   border: 5px solid black;
+   height: 100%;
+   left: 0;
+   margin-left: auto;
+   margin-right: auto;
+   margin: 0;
+   overflow-x: hidden;
+   padding: 0;
+   position: relative;
+   top: 0;
+   width: 1200px;
+   z-index: 1;
+      -moz-background-size: cover;
+        -o-background-size: cover;
+   -webkit-background-size: cover;
+   /*background-repeat:repeat;
+background-attachment:fixed;
+background-position:0% 0%;*/
+}
+
+body > div > img
+{
+   background-attachment: fixed;
+   background-position: top center;
+   background-repeat: repeat-y;
+   background-size: contain;
+   bottom: 0;
+   margin-left: auto;
+   margin-right: auto;
+   position: absolute;
+   visibility: hidden;
+   width: 1200px;
+   z-index: -2;
+}
+
+/* 3.Header
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+body > div > header
+{
+   font-family: Sans-serif;
+   font-size: 1em;
+   height: 15%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0;
+   position: relative;
+   width: 1200px;
+   z-index: 1;
+}
+
+body > div > header img
+{
+   left: 0;
+   margin-left: auto;
+   margin-right: auto;
+   position: absolute;
+   top: 0;
+   width: 1200px;
+   z-index: 99;
+}
+
+
+/* 4.Navigation
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+nav
+{
+   background: #aaa;
+   border: 5px solid black;
+   bottom: 0;
+   display: inline-block;
+   font-size: 1em;
+   height: 1.5em;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   text-align: center;
+   top: 250px;
+   width: 1195px;
+   z-index: -1;
+}
+
+
+/*Main Content
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+body > div > main
+{
+   background-repeat: repeat-y;
+   color: white;
+   font-family: Sans-serif;
+   height: 70%;
+   left: 0;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0;
+   position: absolute;
+   top: 350px;
+   width: 1200px;
+   z-index: 0;
+}
+
+body > div > main > section
+{
+   margin-bottom: 20px;
+   width: inherit;
+}
+
+body > div > main > section.top
+{
+   display: inline-block;
+   width: inherit;
+}
+
+body > div > main > section > article
+{
+   background: url(background.png) no-repeat center center;
+   display: inline;
+   float: left;
+   left: 0;
+   margin-top: 1em;
+   text-align: center;
+   top: 0;
+   width: 1200px;
+      -moz-background-size: cover;
+        -o-background-size: cover;
+   -webkit-background-size: cover;
+}
+
+body > div > main > section > article > *:not(header)
+{
+   font-size: 1em;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+   width: 50%;
+}
+
+body > div > main > section > article > span
+{
+   -webkit-transition: 1s ease;
+}
+body > div > main > section > article > span > img
+{
+   left: 0;
+   padding: auto;
+   top: 0;
+}
+
+body > div > main > section > article > span > img:hover
+{
+   box-shadow: 0 0 0 10px #000;
+   left: 0;
+   padding: auto;
+   top: 0;
+   -webkit-transition: 1s ease;
+}
+
+html > body > div > main > section > article > a
+{
+   opacity: 100;
+   position: relative;
+   width: 100%;
+}
+
+/* Pop Articles */
+html > body > div > main > section > article > a:hover
+{
+   background-color: rgba(139, 151, 153, 100);
+   font-size: 1em;
+   opacity: .5;
+   position: relative;
+   text-align: center;
+   transition-timing-function: ease;
+   width: 100%;
+   -webkit-transition-delay: 0s;
+   -webkit-transition-duration: .4s;
+   -webkit-transition-property: opacity;
+   /* figure this out -I want a border to appear when you hover over the a element
+    box-shadow: 0 0 0 10px #000000;
+    */
+}
+
+html > body > div > main > section > article > a > h6
+{
+   opacity: 0;
+}
+
+/* Pop Article's Words */
+html > body > div > main > section > article > a:hover > h6
+{
+   bottom: 0;
+   color: red;
+   font-size: 1em;
+   left: 0;
+   opacity: 100;
+   overflow: hidden;
+   position: absolute;
+   right: 0;
+   top: 0;
+   transition-timing-function: ease;
+   z-index: 200;
+   -webkit-transition-delay: 0s;
+   -webkit-transition-duration: .4s;
+   -webkit-transition-property: opacity ;
+}
+
+
+aside
+{
+   display: none;
+}
+/*Aside
+///////////////////////////////////////////////////////////////////////////////
+
+
+.articleandaside {
+top:0;
+left:0;
+margin-right: 600px;
+display: inline;
+word-wrap:break-word;
+float:left;
+width: 595px;
+background: #fff url(background.png) 50% 0;
+overflow-x:hidden;
+background-color: rgba(0, 0, 0, 0.5);
+height:400px;
+margin-top: 1em;
+z-index: 1;
+}
+
+
+.articleandaside *{
+margin-left: 4%;
+}
+
+body > div > aside {
+	visibility: hidden;
+position: absolute;
+font-family: Sans-serif;
+font-size: 1em;
+color:white;
+width: 595px;
+margin-left:auto;
+margin-right:auto;
+padding: 0;
+top:350px;
+right:0;
+font-size: 1em;
+z-index: 1;
+}
+
+
+.articleandaside iframe {
+/visibility: hidden; just for development- unhide on 
+live site (don't want to spam the server each time I relode my test page)/
+width: 80%;
+height: 50%;
+margin-top: 10%;
+}
+*/
+
+/*footer
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+body > div > footer
+{/*
+   background-color: white;
+   background-size: 100% 100%;
+   background: url(media/footer.png) no-repeat 0 0;
+   bottom: -1%;
+   display: block;
+   font-size: 1em;
+   height: 8%;
+   left: 0;
+   position: absolute;
+   text-align: center;
+   width: 100%;
+   z-index: 3;
+   */
+}
+
+footer div
+{
+   display: inline-block;
+   font-size: 1em;
+   height: 1em;
+   left: 0;
+   margin: auto;
+   text-align: center;
+   top: 50%;
+   width: auto;
+}
+
+footer p > a
+{
+   background-color: #111;
+   border: 2px solid black;
+   margin-left: 1em;
+
+   top-margin: 50%;
+}
+
+footer a
+{
+   background-color: #111;
+   border: 2px solid black;
+   padding: .5em;
+
+   top-margin: 50%;
+}
+
+.splitleft
+{
+   float: left;
+   margin-top: 1em;
+   width: 40%;
+}
+
+.splitright
+{
+   float: right;
+   margin-top: 1em;
+   width: 60%;
+}
+
+/*link styling
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+/*link underline*/
+a:link
+{
+   text-decoration: none !important;
+}
+
+a:visited
+{
+   text-decoration: none !important;
+}
+
+a:hover
+{
+   color: black;
+   text-decoration: underline !important;
+}
+
+a:active
+{
+   text-decoration: underline !important;
+}
+
+
+/*link colouring
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+/* unvisited link */
+a:link
+{
+   color: black;
+}
+
+/* visited link */
+a:visited
+{
+   color: black;
+}
+
+/* mouse over link */
+a:hover
+{
+   color: black;
+}
+
+/* selected link */
+a:active
+{
+   color: black;
+}
+
+
+
+/*Junk kept for reference
+///////////////////////////////////////////////////////////////////////////////*/
+
+/*
+body > div> main > section > article.secart{
+border: 2px solid black;
+display:inline-block;
+position: static;
+word-wrap: break-word;
+float:left;
+width: 600px;
+}
+*/
+/*<--this is the container
+body  > div > main  > aside {
+border-radius: 5px;
+border: 2px solid black;
+display:inline-block;
+position: absolute;
+left:0px;
+top:20px;
+word-wrap:break-word;
+float:right;
+height: 100%;
+z-index:-100;
+}
+*/
+/*
+body  > div > main  > section  > aside.asidetwo{
+border-radius: 5px;
+border: 2px solid black;
+display:inline-block;
+position:fixed;
+right:20px;
+top:20px;
+word-wrap:break-word;
+float:right;
+width:400px;
+height:100%;
+z-index:-100;
+}
+*/
+
+
+
+/*  Hidden because of asides removed from main
+section .hasaside  {
+display:inline-block; 
+padding-left:auto;
+padding-right:auto; 
+width:17%;
+height:1em;
+top:0;
+left:0;
+font-size:1em;
+border-radius: 5px;
+border: 2px solid #ccc;
+}
+*/
+
+/*
+body > div > header span {
+visibility: hidden; Added a photo so this is obsolete- kept it for reference
+margin:-24px;
+color:red;
+font-style:oblique;
+font-variant: small-caps;
+font-weight: bolder;
+font-size:1em;
+line-height:1em;
+font-family: "Times New Roman", Times, serif;
+}
+
+body > div> header h1 {
+visibility:hidden; Added a photo so this is obsolete- kept it for reference
+position: absolute;
+top:0;
+left:0;
+margin-top: 0em;
+margin-left: 0em;
+z-index:2;
+font-size:3em;
+color:black;
+}
+*/
