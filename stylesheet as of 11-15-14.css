@@ -1,0 +1,513 @@
+body
+{
+    margin-top: 6em;
+    text-align: center;
+    width: 100%;
+}
+
+main
+{
+    background-color: #fff;
+    border: 1px solid gray;
+            box-shadow: 2px 10px 101px 48px rgba(0,0,0,.75);
+       -moz-box-shadow: 2px 10px 101px 48px rgba(0,0,0,.75);
+    -webkit-box-shadow: 2px 10px 101px 48px rgba(0,0,0,.75);
+    color: #333;
+    line-height: 130%;
+    margin-top: 6em;
+    margin: 10px auto;
+    text-align: center;
+    width: 90%;
+}
+
+header
+{
+    background-color: #ddd;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+}
+
+header > img
+{
+    width: 100%;
+}
+
+section
+{
+    font-size: 1.5em;
+}
+
+
+/*section left
+////////////////////////////*/
+
+
+.section_left
+{
+	border-right: 1px solid gray;
+    float: left;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    width: 60%;
+    height: 100%;
+    
+}
+
+
+.section_left > article
+{
+	width: 25%;
+	height: 20%;
+	border:.1em solid black;
+	display: inline-block;
+	margin:2em;
+	padding:1em;
+
+}
+
+.section_left > article {
+    position: relative;
+    display: inline-block;
+}
+
+.section_left>article:focus {
+    /* clicking on label should toggle the menu */
+    pointer-events: none;
+    outline: none;
+
+
+}
+
+.section_left > #aq2:focus > #quad2 {
+    /*  opacity is 1 in opened state (see below) */
+width: 300%;
+height: 15em;
+top:-320%;
+left:-25%;
+
+    opacity: 1;
+    visibility: visible;
+
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto;
+    text-align: left;
+    outline: none;
+}
+
+.section_left > #aq1:focus > #quad1 {
+    /*  opacity is 1 in opened state (see below) */
+width: 300%;
+height: 15em;
+top:-320%;
+left:-174%;
+
+    opacity: 1;
+    visibility: visible;
+
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto;
+    text-align: left;
+    outline: none;
+}
+
+.section_left div {
+    position: absolute;
+
+    z-index: 1;
+
+    /* use opacity to fake immediate toggle */
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+}
+
+#aq2:focus +article,
+#aq1:focus
+{
+	margin-top: 15em;
+	outline: none;
+}
+
+#aq2 > #quad2,
+#aq1 > #quad1
+{
+	border:.1em solid black;
+	overflow-y: scroll;
+	background: #f1f1f1;
+	background 200ms ease-out;
+	z-index: 1;
+
+}
+
+#aq2:hover,
+#aq1:hover
+{
+background: #7FCBCD;
+background 200ms ease-out;
+}
+
+
+/*
+.section_left > article > div
+{
+	display: none;
+}
+
+.section_left > article > h1
+{
+
+	            transition: all .7s ease-out;
+       -moz-transition: all .7s ease-out;
+        -ms-transition: all .7s ease-out;
+         -o-transition: all .7s ease-out;
+    -webkit-transition: all .7s ease-out;
+}
+
+.section_left > article:hover > h1
+{
+	left: 50%;
+	transform: translateY(-50%);
+	            transition: all .7s ease-out;
+       -moz-transition: all .7s ease-out;
+        -ms-transition: all .7s ease-out;
+         -o-transition: all .7s ease-out;
+    -webkit-transition: all .7s ease-out;
+}
+
+
+.section_left > article:hover > div
+{
+
+	display: relative;
+}
+
+.section_left:hover
+{
+
+}
+
+
+/*section right
+////////////////////////////*/
+.section_right
+{
+
+    float: right;
+    max-width: 30%;
+    padding: 1em;
+}
+
+
+footer
+{
+    background-color: #ddd;
+    border-top: 1px solid gray;
+    clear: both;
+    color: #333;
+    height: 3em;
+    margin: 0;
+    padding: .5em;
+    text-align: center;
+}
+
+footer > div > a
+{
+    display: inline-block;
+}
+
+.left
+{
+    float: left;
+    width: 50%;
+}
+
+.right
+{
+    float: right;
+    width: 50% ;
+}
+
+aside
+{
+    float: right;
+    width: 90%;
+}
+
+aside > iframe
+{
+    width: 90%;
+}
+
+
+/* define the header bar*/
+header
+{
+    background-color: rgba(48, 83, 170, 1);
+    display: inline-block;
+    height: 1em;
+    left: 0;
+    margin-top: 0 !important;
+    padding-bottom: 2.5em;
+    padding-left: 8em;
+    padding-top: .5em;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    width: 100%;
+}
+
+header > a > img
+{
+    height: 300%;
+}
+
+/* define the header bar items*/
+header > ul
+{
+    background-color: rgba(48, 83, 170, 1);
+    display: inline-block;
+    float: right;
+    height: 2em;
+    margin-top: 0 !important;
+    padding: 1em;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+/*define main menuitems*/
+header > ul > li
+{
+    background-color: transparent;
+    color: black;
+    display: inline-block;
+    font-size: 15px;
+    height: 100%;
+    margin-top: 1em;
+    text-transform: uppercase;
+    transform: translateY(-60%);
+    width: 30%;
+
+    font: Arial,sans-serif;
+}
+
+header > ul > li:hover
+{
+    background-color: rgba(48, 83, 170, 1);
+}
+
+header > ul > li img
+{
+    float: left;
+    margin-right: 2em;
+    width: 70%;
+}
+
+header > ul > li:hover > p
+{
+    text-decoration: underline;
+}
+
+
+/*Menu*/
+input[type=checkbox]
+{
+    left: 1em;
+    position: fixed;
+    top: 1em;
+    visibility: hidden;
+    z-index: 999;
+}
+
+label
+{
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    left: 1em;
+    margin: 0 0 10px 0;
+    position: fixed;
+    transform: translateY(-220%);
+    z-index: 1001;
+}
+
+label > div
+{
+    display: inline-block;
+    transform: translateY(-50%);
+}
+
+input[type=checkbox]:checked  label
+{
+    cursor: pointer;
+    display: inline-block;
+    left: 217px;
+    margin: 0 0 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    -webkit-appearance: push-button;
+       -moz-appearance: button;
+}
+
+/* Default State */
+nav
+{
+    background: rgba(40, 44, 44, 1);
+    height: 100%;
+    left: -20%;
+    position: fixed;
+    top: 4em;
+            transition: all .7s ease-out;
+       -moz-transition: all .7s ease-out;
+        -ms-transition: all .7s ease-out;
+         -o-transition: all .7s ease-out;
+    -webkit-transition: all .7s ease-out;
+    width: 20%;
+    z-index: 1000;
+}
+
+nav > ul
+{
+    margin-top: 2em;
+    padding-left: 1em;
+}
+
+nav > ul > li
+{
+    background-image: url(media/arrow.gif);
+    background-position: 0 .5em;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgba(255,255,255,.05);
+    height: 4em;
+    list-style: none;
+    padding-left: 10px;
+    text-align: left;
+    width: 90%;
+}
+
+nav > ul > li:active
+{
+    background-color: rgba(255,255,255,.05);
+    height: 4em;
+            transition: none;
+    -webkit-transition: none;
+}
+
+nav > ul form,
+nav > ul  a
+{
+    color: white;
+    margin-top: 10px;
+    padding-left: 1%;
+    text-align: left;
+    text-decoration: none;
+    width: 90%;
+}
+
+nav > ul > li > div
+{
+    height: 40%;
+}
+
+
+
+
+input[type=checkbox]:hover ~ nav
+{
+    background: rgba(40, 44, 44, 1);
+    height: 100%;
+    left: -19%;
+    position: fixed;
+    top: 4em;
+            transition: all .2s ease-out;
+       -moz-transition: all .2s ease-out;
+        -ms-transition: all .2s ease-out;
+         -o-transition: all .2s ease-out;
+    -webkit-transition: all .2ssssss ease-out;
+    width: 20%;
+    z-index: 1;
+}
+
+/* Toggled State */
+input[type=checkbox]:checked ~ nav,
+input[type=checkbox]:focus ~ nav
+{
+    background: rgba(40, 44, 44, 1);
+            box-shadow: inset -50px 1px 83px -28px #080000;
+       -moz-box-shadow: inset -50px 1px 83px -28px #080000;
+    -webkit-box-shadow: inset -50px 1px 83px -28px #080000;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 4em;
+            transition: all .7s ease-out;
+       -moz-transition: all .7s ease-out;
+        -ms-transition: all .7s ease-out;
+         -o-transition: all .7s ease-out;
+    -webkit-transition: all .7s ease-out;
+    width: 20%;
+    z-index: 1;
+
+         -o-box-shadow: inset -50px 1px 83px -28px #080000;
+}
+
+
+/*define drop-down menus*/
+nav > ul > li > ul
+{
+    background: transparent;
+    color: white;
+    font-size: .75em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    position: hidden;
+    text-decoration: none;
+    top: 20px;
+    width: 195px;
+}
+
+/* hide the drop-down menus */
+nav ul > li > ul,
+nav ul > li > ul > li > ul
+{
+    display: none;
+}
+
+/* show the drop-down menus when hovering */
+nav ul > li:hover > ul,
+nav ul > li > ul > li:hover > ul
+{
+    display: block;
+    margin-top: 19px;
+    text-align: left;
+    width: 100%;
+    z-index: 99;
+}
+
+.menuPop
+{
+    color: white;
+}
+
+.menuPop:hover
+{
+    height: 8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,446 @@
+/*===========================================================================================================
+=============================================================================================================
+ ________  ________          ________  ________  ___  _____ ______   ________  ___  ________  _______      
+|\_____  \|\   ___ \        |\   ____\|\   __  \|\  \|\   _ \  _   \|\   __  \|\  \|\   __  \|\  ___ \     
+\|____|\ /\ \  \_|\ \       \ \  \___|\ \  \|\  \ \  \ \  \\\__\ \  \ \  \|\  \ \  \ \  \|\  \ \   __/|    
+      \|\  \ \  \ \\ \       \ \  \  __\ \   _  _\ \  \ \  \\|__| \  \ \  \\\  \ \  \ \   _  _\ \  \_|/__  
+     __\_\  \ \  \_\\ \       \ \  \|\  \ \  \\  \\ \  \ \  \    \ \  \ \  \\\  \ \  \ \  \\  \\ \  \_|\ \ 
+    |\_______\ \_______\       \ \_______\ \__\\ _\\ \__\ \__\    \ \__\ \_______\ \__\ \__\\ _\\ \_______\
+    \|_______|\|_______|        \|_______|\|__|\|__|\|__|\|__|     \|__|\|_______|\|__|\|__|\|__|\|_______|
+                                                                                                           
+============================================================================================================
+==========================================================================================================
+<!--
+            Author: Matthew K. Greenlaw
+            Date: 31OCT14
+            Week Submitted: Week 5
+      -->
+*/
+
+
+/*Globals
+///////////////////////////////////////////////////////////////////////////////*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*Main Containers and backgrounds
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+html
+{
+    height: 2000px;
+    margin: 0;
+}
+
+body
+{
+    background-color: #444;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 1200px;
+}
+
+body > div
+{
+    background-attachment: fixed;
+    background-color: #d2b9d3;
+    background-position: 0 0;
+    background-repeat: repeat;
+            background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+    -webkit-background-size: cover;
+    background: url(media/gearsoldpaper.jpg) no-repeat center center fixed;
+            box-shadow: 2px 10px 101px 48px rgba(0,0,0,.75);
+       -moz-box-shadow: 2px 10px 101px 48px rgba(0,0,0,.75);
+    -webkit-box-shadow: 2px 10px 101px 48px rgba(0,0,0,.75);
+    height: 100%;
+    left: 0;
+    margin: 10px auto;
+    position: relative;
+    top: 0;
+    width: 90%;
+    z-index: 1;
+}
+
+
+/*Page Header
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+body > div > header img
+{
+    width: 100%;
+}
+
+/*Page Header
+///////////////////////////////////////////////////////////////////////////////*/
+/* define the navigation bar*/
+nav
+{
+    background-color: rgba(0,0,0,.75);
+            box-shadow: 0 0 84px 25px rgba(0,0,0,.75);
+       -moz-box-shadow: 0 0 84px 25px rgba(0,0,0,.75);
+    -webkit-box-shadow: 0 0 84px 25px rgba(0,0,0,.75);
+    text-align: center;
+}
+
+nav:hover
+{
+    background-color: rgba(0,0,0,.75);
+            box-shadow: 0 0 139px -26px rgba(214,214,182,1);
+       -moz-box-shadow: 0 0 139px -26px rgba(214,214,182,1);
+    -webkit-box-shadow: 0 0 139px -26px rgba(214,214,182,1);
+}
+
+/* define the navigation bar items*/
+nav > ul
+{
+    width: 100%;
+}
+
+/*define main menuitems*/
+nav > ul > li
+{
+    background-color: transparent;
+    display: inline-block;
+    font-size: 2em;
+    left: 0;
+    text-align: center;
+    width: 18%;
+}
+
+nav > ul > li:hover
+{
+   background-color: #6E6E6E;
+}
+
+nav > ul > li:hover > p
+{
+    text-decoration: underline;
+}
+
+nav > ul > li > p
+{
+    padding: .5em;
+}
+
+/*define drop-down menus*/
+nav > ul > li > ul
+{
+    background: #6E6E6E;
+    font-size: .75em;
+    padding-top: 1em;
+    position: absolute;
+    top: 250px;
+    width: 195px;
+}
+
+/* hide the drop-down menus */
+nav ul > li > ul,
+nav ul > li > ul > li > ul
+{
+    display: none;
+}
+
+/* show the drop-down menus when hovering */
+nav ul > li:hover > ul,
+nav ul > li > ul > li:hover > ul
+{
+
+    display: block;
+    margin-top: 19px;
+    padding-left: 1%;
+    text-align: left;
+    width: 17%;
+    z-index: 99;
+}
+
+nav ul > li:hover > ul > li,
+nav ul > li > ul > li:hover > ul > li
+{
+    background-image: url(media/arrow.gif);
+    background-position: 0 .5em;
+    background-repeat: no-repeat;
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 90%;
+}
+
+nav ul > li:hover > ul:hover > li > a:hover,
+nav ul > li > ul > li:hover > a:hover
+{
+    position: relative;
+    text-shadow: 5px 0 9px rgba(255, 0, 0, 1);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Main Content
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+body > div > main
+{
+    color: rgba(0, 122, 255, 0.9);
+    font-family: Sans-serif;
+    height: 90%;
+    transform: translateY(2%);
+}
+
+main > section
+{
+    text-align: center;
+}
+
+main > section > article > h1
+{
+   color: white;
+}
+
+article
+{
+    background-color: black;
+
+    display: inline;
+    float: left;
+    height: 300px;
+    margin-bottom: 1em;
+    opacity: .9;
+            transition: color .4s ease-in-out;
+       -moz-transition: color .4s ease-in-out;
+        -ms-transition: color .4s ease-in-out;
+         -o-transition: color .4s ease-in-out;
+    -webkit-transition: color .4s ease-in-out;
+    -webkit-transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+    width: 100%;
+}
+
+article:hover
+{
+    background-color: black;
+            box-shadow: 0 0 139px -26px rgba(245,237,245,1);
+       -moz-box-shadow: 0 0 139px -26px rgba(245,237,245,1);
+    -webkit-box-shadow: 0 0 139px -26px rgba(245,237,245,1);
+    display: inline;
+    float: left;
+    height: 300px;
+    opacity: 1;
+            transition: color .4s ease-in-out;
+       -moz-transition: color .4s ease-in-out;
+        -ms-transition: color .4s ease-in-out;
+         -o-transition: color .4s ease-in-out;
+    -webkit-transition: color .4s ease-in-out;
+    transition-timing-function: ease;
+    width: 100%;
+}
+
+.infoarticle
+{
+    font-size: 1em;
+    height: auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.infoarticle:hover
+{
+    font-size: 1em;
+    height: auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.infoarticle > p
+{
+    text-align: left;
+}
+
+html > body > div > main > section > article > a
+{
+    opacity: 1;
+            transition: color .4s ease-in-out;
+       -moz-transition: color .4s ease-in-out;
+        -ms-transition: color .4s ease-in-out;
+         -o-transition: color .4s ease-in-out;
+    -webkit-transition: color .4s ease-in-out;
+}
+
+html > body > div > main > section > article > a:hover
+{
+    background-color: red;
+    opacity: .6;
+}
+
+section > article img
+{
+    position: relative;
+    transform: translateY(6%);
+}
+
+body > div > main > section > article > a > h1
+{
+    color: gray;
+    font-size: 3em;
+    opacity: .0;
+    position: relative;
+    top: -45px;
+            transition: color .4s ease-in-out;
+       -moz-transition: color .4s ease-in-out;
+        -ms-transition: color .4s ease-in-out;
+         -o-transition: color .4s ease-in-out;
+    -webkit-transition: color .4s ease-in-out;
+}
+
+body > div > main > section > article > a:hover > h1
+{
+    color: white;
+    font-size: 3em;
+    opacity: 1;
+            transition: color .4s ease-in-out;
+       -moz-transition: color .4s ease-in-out;
+        -ms-transition: color .4s ease-in-out;
+         -o-transition: color .4s ease-in-out;
+    -webkit-transition: color .4s ease-in-out;
+}
+
+
+/*Aside
+///////////////////////////////////////////////////////////////////////////////*/
+
+aside
+{
+    color: #d1d1d1;
+    font-size: 3em;
+    margin-top: 100px;
+    text-align: center;
+}
+
+aside iframe
+{
+    width: 80%;
+}
+
+
+/*footer
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+body > div > footer
+{
+    background-color: black;
+    bottom: 0;
+    color: white;
+    display: inline !important;
+    display: block;
+    font-size: 1em;
+    height: 6em;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+}
+
+footer p
+{
+    color: white;
+}
+
+.splitleft
+{
+    float: left;
+    width: 39% !important;
+}
+
+.splitright
+{
+    float: right;
+    width: 59% ;
+}
+
+
+
+.halfsplitleft
+{
+    float: left;
+    width: 45% !important;
+}
+
+.halfsplitright
+{
+    float: right;
+    width: 45% !important;
+}
+
+/*Solves a glitch when the aside is placed below the footer*/
+.halfsplitright:hover
+{
+    float: right;
+    width: 45% !important;
+}
+
+/*link styling
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+/*link underline*/
+a:link
+{
+    text-decoration: none !important;
+}
+
+a:visited
+{
+    text-decoration: none !important;
+}
+
+a:hover
+{
+    text-decoration: none !important;
+}
+
+a:active
+{
+    text-decoration: underline !important;
+}
+
+
+
+/*link colouring
+///////////////////////////////////////////////////////////////////////////////*/
+
+
+/* unvisited link */
+a:link
+{
+    color: white;
+    text-shadow: 7px 0 30px rgba(255, 255, 255, .5);
+}
+
+/* visited link */
+a:visited
+{
+    color: white;
+}
+
+/* mouse over link */
+a:hover
+{
+    color: white;
+}
+
+/* selected link */
+a:active
+{
+    color: white;
+}

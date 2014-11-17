@@ -1,0 +1,33 @@
+table
+{
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+}
+
+tbody
+{
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+table.table 
+{
+	font:normal 12px arial, tahoma, helvetica, sans-serif;
+}
+
+table.table th 
+{
+	background-color: #EBECEE;
+	border: 1px solid #D0D0D0;
+	content: #333;
+}
+
+table.table td
+{
+	padding:5px;
+	border-bottom: 1px solid #D0D0D0;
+	border-right: 1px solid #D0D0D0;
+}
