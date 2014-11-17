@@ -43,11 +43,6 @@ body
 /*///////////////////////////////////////
 Header
 ///////////////////////////////////////*/
-header > img
-{
-    width: 100%;
-}
-
 header
 {
     position: fixed;
@@ -65,15 +60,15 @@ header
     padding-left: 8em;
 
     text-align: left;
-    text-align: center;
 
     background-color: rgba(48, 83, 170, 1);
-    background-color: #ddd;
+
 }
 
 header > a > img
 {
     height: 300%;
+    left:0;
 }
 
 /* define the header bar items*/
@@ -119,19 +114,13 @@ header > ul > li:hover
     background-color: rgba(48, 83, 170, 1);
 }
 
+/*Header Icons*/
 header > ul > li img
 {
     float: left;
-
     width: 70%;
-    margin-right: 2em;
+    margin-right: 1em;
 }
-
-header > ul > li:hover > p
-{
-    text-decoration: underline;
-}
-
 
 /*///////////////////////////////////////
 UX Menu
@@ -582,10 +571,28 @@ h3
 /*///////////////////////////////////////
 Index.html main area quad formating
 ///////////////////////////////////////*/
+/*where the content hides*/
+.section_left div
+{
+    position: absolute;
+    top: -320%;
+    left: -174%;
+
+    visibility: hidden;
+
+    width: 300%;
+    height: 15em;
+
+    transition: visibility .5s;
+
+    opacity: 0;
+}
+
+/*where the content shows*/
 #aq2:focus > #quad2
 {
     z-index: 1;
-    top: -320%;
+    top: -200%;
     left: -25%;
 
     visibility: visible;
@@ -599,10 +606,11 @@ Index.html main area quad formating
     outline: none;
 }
 
+/*where the content shows*/
 #aq1:focus > #quad1
 {
     z-index: 1;
-    top: -320%;
+    top: -200%;
     left: -174%;
 
     visibility: visible;
@@ -640,21 +648,8 @@ Index.html main area quad formating
     background:         linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
 }
 
-.section_left div
-{
-    position: absolute;
-    top: -320%;
-    left: -174%;
 
-    visibility: hidden;
 
-    width: 300%;
-    height: 15em;
-
-    transition: visibility .5s;
-
-    opacity: 0;
-}
 
 #aq2:focus + article,
 #aq1:focus
@@ -663,8 +658,6 @@ Index.html main area quad formating
 
     outline: none;
 }
-
-
 
 #aq2:hover,
 #aq1:hover
