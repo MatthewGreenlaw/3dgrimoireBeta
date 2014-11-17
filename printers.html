@@ -28,10 +28,10 @@
 	<body>
 		<label for="menu-toggle" tabindex="0">
 			<img src="menu2.png" alt="Logo">
-			<div> Menu </div>
+			<span> Menu </span>
 		</label>
 		<input type="checkbox" id="menu-toggle">
-		<nav id="uxmenu">
+		<nav id="uxmenu"  role="navigation" aria-label="Main menu">
 			<ul role="menu" aria-haspopup="true" >		
 				<li role="menuitem" tabindex="-1">
 					 <a href="printers.html" title="Compare 3D Printers"> 
@@ -106,7 +106,7 @@
 				</li>			</ul>
 		</nav>
 		
-		<header role="navigation" aria-label="Main menu">				
+		<header>				
 					<a href="http://newtheoryman.github.io/3dgrimoireBeta/"> <img src="logo.jpg" alt="Logo"> </a>
 			<ul role="menubar">
 				<li>
@@ -130,10 +130,10 @@
 
 		<main >
 			<section class="section_left">
-				<h2> Table of 3D Printers</h2>
+				<h3> Table of 3D Printers </h3>
 
 				<table id="tableStart">
-				<table summary="This table shows the attributes of some major 3D Printers."
+				<table summary="This table shows the attributes of some major 3D Printers.">
 				<caption><b><u>Find a printer that's right for you</u></b></caption>
 				<colgroup>
 				<colgroup span=8>
