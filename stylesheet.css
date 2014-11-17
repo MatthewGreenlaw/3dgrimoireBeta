@@ -138,7 +138,6 @@ section h3
     height: 15em;
 
     text-align: left;
-    pointer-events: auto;
 
     opacity: 1;
     outline: none;
@@ -265,7 +264,6 @@ a.goToTop:visited
     text-decoration: none;
 
     color: white;
-    border: 0 solid #000;
     border-right: 1px solid red;
     -webkit-border-radius: 200px 0 0 200px;
        -moz-border-radius: 200px 0 0 200px;
@@ -297,7 +295,6 @@ a.goToBottom:visited
     text-decoration: none;
 
     color: white;
-    border: 0 solid #000;
     border-left: 1px solid red;
     -webkit-border-radius: 0 200px 200px 0;
        -moz-border-radius: 0 200px 200px 0;
