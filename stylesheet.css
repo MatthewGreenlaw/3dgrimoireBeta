@@ -49,6 +49,11 @@ section
     font-size: 1.5em;
 }
 
+section h2
+{
+    display: none;
+}
+
 
 /*section left
 ////////////////////////////*/
@@ -100,7 +105,6 @@ section
 
 .section_left > article:focus
 {
-    /* clicking on label should toggle the menu */
     pointer-events: none;
 
     outline: none;
@@ -113,13 +117,11 @@ section
     left: -25%;
 
     visibility: visible;
-    /*  opacity is 1 in opened state (see below) */
 
     width: 280%;
     height: 15em;
 
     text-align: left;
-    /* don't let pointer-events affect descendant elements */
     pointer-events: auto;
 
     opacity: 1;
@@ -133,13 +135,11 @@ section
     left: -174%;
 
     visibility: visible;
-    /*  opacity is 1 in opened state (see below) */
 
     width: 280%;
     height: 15em;
 
     text-align: left;
-    /* don't let pointer-events affect descendant elements */
     pointer-events: auto;
 
     opacity: 1;
@@ -149,27 +149,27 @@ section
 #quad2,
 #quad1
 {
+    line-height: 200%;
+
     z-index: 1;
 
     overflow-y: scroll;
 
+    padding-right: .5em;
+    padding-left: 1em;
+
     transition: 200ms ease-out;
 
     background: #f1f1f1;
-
     background: rgba(226,226,226,1);
-background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226,226,226,1)), color-stop(5%, rgba(219,219,219,1)), color-stop(20%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
-background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
-background: -o-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
-background: -ms-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
-background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
+    background:    -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226,226,226,1)), color-stop(5%, rgba(219,219,219,1)), color-stop(20%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
+    background:      -o-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
+    background:     -ms-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
+    background:         linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 5%, rgba(209,209,209,1) 20%, rgba(254,254,254,1) 100%);
 
-padding-left: 1em;
-padding-right: .5em;
-
-line-height: 200%;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
 }
 
 .section_left div
@@ -184,7 +184,6 @@ line-height: 200%;
     height: 15em;
 
     transition: visibility .5s;
-    /* use opacity to fake immediate toggle */
 
     opacity: 0;
 }
@@ -205,46 +204,11 @@ line-height: 200%;
     transition: 200ms ease-out;
 }
 
-
-/*
-.section_left > article > div
+#aq4,
+#aq3
 {
-    display: none;
+    text-decoration: none;
 }
-
-.section_left > article > h1
-{
-
-                transition: all .7s ease-out;
-       -moz-transition: all .7s ease-out;
-        -ms-transition: all .7s ease-out;
-         -o-transition: all .7s ease-out;
-    -webkit-transition: all .7s ease-out;
-}
-
-.section_left > article:hover > h1
-{
-    left: 50%;
-    transform: translateY(-50%);
-                transition: all .7s ease-out;
-       -moz-transition: all .7s ease-out;
-        -ms-transition: all .7s ease-out;
-         -o-transition: all .7s ease-out;
-    -webkit-transition: all .7s ease-out;
-}
-
-
-.section_left > article:hover > div
-{
-
-    display: relative;
-}
-
-.section_left:hover
-{
-
-}
-
 
 /*section right
 ////////////////////////////*/
@@ -293,23 +257,23 @@ a.goToTop:visited
     display: block;
     visibility: visible;
 
+    width: 55px;
     padding: 1px;
 
-    text-decoration: none;
-
-    color: white;
-border-radius: 200px 0px 0px 200px;
--moz-border-radius: 200px 0px 0px 200px;
--webkit-border-radius: 200px 0px 0px 200px;
-border: 0px solid #000000;
-border-right: 1px solid red;
-    background-color: black;
-        -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
        -moz-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
          -o-transform: rotate(90deg);
             transform: rotate(90deg);
-            width: 55px;
+    text-decoration: none;
+
+    color: white;
+    border: 0 solid #000;
+    border-right: 1px solid red;
+    -webkit-border-radius: 200px 0 0 200px;
+       -moz-border-radius: 200px 0 0 200px;
+            border-radius: 200px 0 0 200px;
+    background-color: black;
 }
 
 /*"Top" button on the right of the page*/
@@ -325,6 +289,7 @@ a.goToBottom:visited
 
     visibility: visible;
 
+    width: 55px;
     padding: 1px;
 
     -webkit-transform: rotate(90deg);
@@ -336,19 +301,17 @@ a.goToBottom:visited
 
     color: white;
     border: 0 solid #000;
+    border-left: 1px solid red;
     -webkit-border-radius: 0 200px 200px 0;
        -moz-border-radius: 0 200px 200px 0;
             border-radius: 0 200px 200px 0;
     background-color: black;
-    border-left: 1px solid red;
-                width: 55px;
 }
 
 
 .goToTop img
-
 {
-        -webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
        -moz-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
          -o-transform: rotate(-90deg);
@@ -600,9 +563,6 @@ nav > ul > li > div
     height: 40%;
 }
 
-
-
-
 input[type=checkbox]:hover ~ nav
 {
     position: fixed;
@@ -647,24 +607,6 @@ input[type=checkbox]:focus ~ nav
 
          -o-box-shadow: inset -50px 1px 83px -28px #080000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*define drop-down menus*/
 nav > ul > li > ul
@@ -799,6 +741,7 @@ tbody .tableWave1
 {
     text-align: center;
 }
+
 tbody .tableWave2
 {
     text-align: center;
